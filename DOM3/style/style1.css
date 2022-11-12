@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+	margin: 10px;
+	padding: 10px;
+}
+.form input,
+.form button {
+	margin: 10px;
+	padding: 10px;
+}
+.form button {
+	background-color: orange;
+	color: white;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+.card {
+	border: 1px solid black;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 10px;
+	width: 350px;
+	background-color: lightblue;
+}
+.img {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+}
