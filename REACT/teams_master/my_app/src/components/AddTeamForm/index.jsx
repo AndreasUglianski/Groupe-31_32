@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import s from './index.module.css';
+import { Context } from '../../context';
 
 export default function AddTeamForm() {
+	const { addTeam } = useContext(Context);
+
 	const submit_form = (event) => {
 		event.preventDefault();
 		const { team_title } = event.target;
-		console.log(team_title.value);
+		addTeam(team_title.value);
 		team_title.value = '';
 	};
 
