@@ -1,0 +1,13 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.product_card {
+	width: 200px;
+	height: 100px;
+	padding: 10px;
+	background-color: beige;
+	border-radius: 5px;
+	border: 2px solid blue;
+}
