@@ -15,7 +15,7 @@ export const posts_data = [
 			},
 			{
 				id: 3,
-				comment: 'Good point',
+				comment: 'I desagree',
 			},
 		],
 	},

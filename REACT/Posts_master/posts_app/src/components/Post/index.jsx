@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
 import s from './index.module.css';
 import { Context } from '../../context';
+import CommentsContainer from '../CommentsContainer';
 
-export default function Post({ id, title, text, like }) {
+export default function Post({ id, title, text, like, comments }) {
 	const { change_like } = useContext(Context);
 
 	const like_text = like ? 'Liked' : 'Like?';
@@ -16,6 +17,7 @@ export default function Post({ id, title, text, like }) {
 			<p className={like_style} onClick={() => change_like(id)}>
 				{like_text}
 			</p>
+			<CommentsContainer comments={comments} post_id={id} />
 		</div>
 	);
 }
