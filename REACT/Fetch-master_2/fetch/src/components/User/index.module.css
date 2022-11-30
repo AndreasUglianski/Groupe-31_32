@@ -3,12 +3,17 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-.product_card {
-	width: 300px;
-	height: 200px;
-	padding: 15px;
+.users_card {
+	width: 250px;
+	height: 300px;
+	padding: 10px;
 	margin: 25px;
 	background-color: beige;
 	border-radius: 5px;
 	border: 2px solid blue;
+}
+img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
 }
