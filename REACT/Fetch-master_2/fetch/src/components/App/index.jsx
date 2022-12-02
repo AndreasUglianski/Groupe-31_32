@@ -18,11 +18,15 @@ function App() {
 		getUsers(setUsers);
 	}, []);
 
-	const createNewProduct = product => setProducts(prev =>[...prev, product])
+	const createNewProduct = product => setProducts(prev => [...prev, product])
+	const createNewUser = (users) =>
+		setUsers((prev) => [...prev, users]);
 
 	return (
 		<div>
-			<Context.Provider value={{ products, users, createNewProduct }}>
+			<Context.Provider
+				value={{ products, users, createNewProduct, createNewUser }}
+			>
 				<Routes>
 					<Route path='/' element={<MainPage />} />
 					<Route path='/products' element={<ProductsPage />} />
