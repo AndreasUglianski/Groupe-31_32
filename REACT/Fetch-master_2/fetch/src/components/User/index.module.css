@@ -4,15 +4,15 @@
 	box-sizing: border-box;
 }
 .users_card {
-	width: 250px;
-	height: 300px;
+	/* width: 250px;
+	height: 300px; */
 	padding: 10px;
 	margin: 25px;
 	background-color: beige;
 	border-radius: 5px;
 	border: 2px solid blue;
 }
-img {
+.users_card img {
 	width: 200px;
 	height: 200px;
 	object-fit: cover;
