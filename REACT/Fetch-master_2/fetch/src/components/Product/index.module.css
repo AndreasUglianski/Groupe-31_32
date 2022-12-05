@@ -12,3 +12,6 @@
 	border-radius: 5px;
 	border: 2px solid blue;
 }
+.product_picture {
+	max-width: 250px;
+}
