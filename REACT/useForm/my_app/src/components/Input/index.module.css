@@ -1,0 +1,12 @@
+.form_input {
+	border: 1px solid #cfd8dc;
+	border-radius: 12px;
+	padding: 14px 16px;
+	width: 100%;
+	margin: 4px 0;
+}
+
+.form_input:focus {
+	outline: none;
+	border-color: #ffe44d;
+}

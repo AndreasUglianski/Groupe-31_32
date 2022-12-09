@@ -7,9 +7,10 @@ export default function FormExample() {
 		register,
 		handleSubmit,
 		formState: { errors },
+		reset,
 	} = useForm();
 
-	const submit = (data) => console.log(data);
+	const submit = (data) => {console.log(data); reset();}
 
 	const emailRegister = register('email', {
 		required: '*The field "email" is required',

@@ -1,0 +1,33 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.form_item {
+	width: 420px;
+	border: 1px solid black;
+	border-radius: 20px;
+	padding: 32px;
+	position: relative;
+}
+.form_title {
+	font-weight: 800;
+	font-size: 28px;
+	line-height: 32px;
+	margin-bottom: 20px;
+}
+.form_descr {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	color: #7b8e98;
+	margin: 20px 0;
+	width: 100%;
+}
+.cross_icon {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	font-size: 22px;
+	cursor: pointer;
+}
