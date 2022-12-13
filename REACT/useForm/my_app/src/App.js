@@ -1,10 +1,20 @@
-import FormExample from './components/FormExample';
-import FormItem from './components/FormItem';
+import { useState } from 'react';
+import Button from './components/Button';
+import {Link} from 'react-router-dom'
+import Modal from './components/Modal';
 
 function App() {
+	const [modal, setModal] = useState(false);
+
 	return (
 		<div>
-			<FormItem />
+			<Link style={{ textDecoration: 'none' }}>
+				<Button color='yellow' onClick={() => setModal(true)}>
+					Open modal window
+				</Button>
+			</Link>
+
+			<Modal modal={modal} setModal={setModal} />
 		</div>
 	);
 }

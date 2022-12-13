@@ -1,0 +1,36 @@
+.modal {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	opacity: 0;
+	/* opacity: прозрачность модального окна, 0 - оно не видно */
+	pointer-events: none; 
+	/* pointer-events: это блокировка с взаимодествием области за модальным окном, none -снимает блок */
+}
+
+.modal_content {
+	background-color: white;
+	border-radius: 20px;
+	position: relative;
+}
+
+.modal.active {
+	opacity: 1;
+	pointer-events: all;
+}
+.cross_icon {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	font-size: 22px;
+	cursor: pointer;
+	z-index: 10;
+}
