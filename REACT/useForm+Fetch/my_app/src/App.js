@@ -1,24 +1,26 @@
-import { getProducts } from "./request/products";
-import { useState, useEffect } from "react";
-import ProductsContainer from "./components/ProductsContainer";
-import { Context } from "./context";
-import AddProductForm from "./components/AddProductForm";
-
+import { getProducts } from './request/products';
+import { useState, useEffect } from 'react';
+import ProductsContainer from './components/ProductsContainer';
+import { Context } from './context';
+import AddProductForm from './components/AddProductForm';
 
 function App() {
+	const [products, setProducts] = useState([]);
 
-  const [products, setProducts] = useState([])
-
-  useEffect(() => {
+	useEffect(() => {
 		getProducts(setProducts);
 	}, []);
 
+	const createNewProduct = (product) =>
+		setProducts((prev_state) => [
+			...prev_state,
+			{ ...product, id: Date.now() },
+		]);
 
-
-  return (
+	return (
 		<div>
-      <Context.Provider value={{ products }}>
-        <AddProductForm/>
+			<Context.Provider value={{ products, createNewProduct }}>
+				<AddProductForm />
 				<ProductsContainer />
 			</Context.Provider>
 		</div>
