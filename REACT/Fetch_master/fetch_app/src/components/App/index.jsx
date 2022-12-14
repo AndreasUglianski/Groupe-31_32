@@ -28,6 +28,7 @@ function App() {
 				<Nav />
 				<Routes>
 					<Route path='/UserPage' element={<UserPage />} />
+					<Route path='/UserPage' element={<UserPage />} />
 					<Route path='/ProductsPage' element={<ProductsPage />} />
 				</Routes>
 			</Context.Provider>
