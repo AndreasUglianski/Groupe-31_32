@@ -5,14 +5,13 @@ import { useForm } from 'react-hook-form';
 import s from './index.module.css';
 import { Link } from 'react-router-dom';
 
-
 export default function FormItem({
 	title,
 	button,
 	info_text,
 	form_type,
 	info_text_2,
-	link_url
+	link_url,
 }) {
 	const { register, handleSubmit } = useForm();
 
@@ -39,12 +38,19 @@ export default function FormItem({
 			) : (
 				''
 			)}
-
-			<p className={s.form_descr}>{info_text}</p>
+			{form_type === 'login' ? (
+				<Link to='/reset_password_form' style={{ textDecoration: 'none' }}>
+					<p className={[s.form_descr, s.form_descr_link].join(' ')}>
+						{info_text}
+					</p>
+				</Link>
+			) : (
+				<p className={s.form_descr}>{info_text}</p>
+			)}
 			<Button color='yellow'>{button.submit}</Button>
 
 			{['registration', 'login'].includes(form_type) ? (
-				<Link to ={link_url} style={{textDecoration: 'none'}}>
+				<Link to={link_url} style={{ textDecoration: 'none' }}>
 					<Button color='white'>{button.redirect}</Button>
 				</Link>
 			) : (
