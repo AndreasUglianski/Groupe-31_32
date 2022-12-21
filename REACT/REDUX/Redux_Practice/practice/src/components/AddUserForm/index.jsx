@@ -1,23 +1,24 @@
 import React from 'react';
-import s from './index.module.css'
+import s from './index.module.css';
 import { addUser } from '../../store/reducers/userReducer';
 import { useDispatch } from 'react-redux';
 
 export default function AddUserForm() {
-
-const dispatch =useDispatch()
+	const dispatch = useDispatch();
 
 	const submit = (event) => {
 		event.preventDefault();
 		const { name, age, country } = event.target;
-		dispatch(addUser({
-			name: name.value,
-			age: age.value,
-			country: country.value,
-		}));
-        name.value = '';
-        age.value = '';
-        country.value = '';
+		dispatch(
+			addUser({
+				name: name.value,
+				age: age.value,
+				country: country.value,
+			})
+		);
+		name.value = '';
+		age.value = '';
+		country.value = '';
 	};
 
 	return (
