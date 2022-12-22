@@ -1,15 +1,18 @@
-import {Routes, Route} from "react-router-dom"
-import MainPage from "./pages/MainPage";
-import PostsPage from "./pages/PostsPage";
-import UserPage from "./pages/UsersPage";
+import { Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import MainPage from './pages/MainPage';
+import PostsPage from './pages/PostsPage';
+import UserPage from './pages/UsersPage';
 
 function App() {
-  return (
+	return (
 		<div>
 			<Routes>
-				<Route path='/' element={<MainPage />} />
-				<Route path='/users' element={<UserPage />} />
-				<Route path='/posts' element={<PostsPage />} />
+				<Route path='/' elelment={<Layout/>}>
+					<Route index element={<MainPage />} />
+					<Route path='/users' element={<UserPage />} />
+					<Route path='/posts' element={<PostsPage />} />
+				</Route>
 			</Routes>
 		</div>
 	);

@@ -1,16 +1,16 @@
-.add_user_form input {
+.add_posts_form input {
 	padding: 10px;
 	margin: 5px;
 	border: 1px solid gray;
 	border-radius: 10px;
 }
 
-.add_user_form input:focus {
+.add_posts_form input:focus {
 	outline: none;
 	border-color: green;
 }
 
-.add_user_form button {
+.add_posts_form button {
 	padding: 10px;
 	margin: 5px;
 	width: 150px;
@@ -21,7 +21,7 @@
 	font-size: 18px;
 }
 
-.add_user_form button:hover {
+.add_posts_form button:hover {
 	background-color: green;
 	color: white;
 }

@@ -1,4 +1,5 @@
 const defaultState = [];
+
 const ADD_USER = 'ADD_USER';
 const DELETE_USER = 'DELETE_USER';
 
@@ -15,7 +16,7 @@ export const userReducer = (state = defaultState, action) => {
 			},
 		];
 	} else if (action.type === DELETE_USER) {
-		return state.filter((el) =>el.id !== action.payload)
+		return state.filter((el) => el.id !== action.payload);
 	} else {
 		return state;
 	}

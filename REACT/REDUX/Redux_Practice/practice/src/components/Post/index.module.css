@@ -1,0 +1,13 @@
+.post_item {
+	border: 2px dashed blue;
+	padding: 10px;
+	border-radius: 10px;
+	position: relative;
+}
+
+.cross_icon {
+	position: absolute;
+	top: 5px;
+	right: 20px;
+	cursor: pointer;
+}
