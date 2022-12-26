@@ -13,11 +13,20 @@ export default function ProductsPage() {
         getProducts(category, setProducts);
     }, [])
     
-    console.log(products);
+  
 
-    return <div className={s.products_page}>
-        {
+    return(
+        <div className={s.products_page}>
+            {
+                products.length === 0
+                    ? <p>{ category} are loading...</p>
+                    : <div>
+           {
             products.map(el => <ProductCard key={ el.id} {...el} />)
-        }
-    </div>;
+           }
+                    </div>
+            }
+        
+        </div>
+    )
 }

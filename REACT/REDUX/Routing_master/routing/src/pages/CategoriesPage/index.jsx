@@ -6,7 +6,7 @@ import s from './index.module.css'
 export default function CategoriesPage() {
 
 
-const [categories, setCategories] = useState([])
+  const [categories, setCategories] = useState([])
 
   useEffect(() => {
     getCategories(setCategories);
@@ -14,9 +14,19 @@ const [categories, setCategories] = useState([])
 
   
 
-  return <div className={s.categories_page}>
-    {
-      categories.map(el => <CategoryCard key={el} category={el}/>)
-    }
-  </div>;
+  return (
+    <div className={s.categories_page}>
+      {
+        categories.length === 0
+          ? <p>Categories are loading...</p>
+          : <div>
+        {
+          categories.map((el) => (
+            <CategoryCard key={el} category={el} />
+          ))
+        }
+			    </div>
+      }
+		</div>
+	);
 }

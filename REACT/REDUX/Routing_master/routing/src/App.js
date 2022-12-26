@@ -4,6 +4,7 @@ import MainPage from './pages/MainPage';
 import AboutPage from './pages/AboutPage';
 import CategoriesPage from './pages/CategoriesPage';
 import ProductsPage from './pages/ProductsPage';
+import ProductDescrPage from './pages/ProductDescrPage';
 
 function App() {
 	return (
@@ -11,9 +12,10 @@ function App() {
 			<Routes>
 				<Route path='/' element={<Layout />}>
 					<Route index element={<MainPage />} />
-					<Route path='/about' element={<AboutPage />} />
-					<Route path='/categories' element={<CategoriesPage />} />
-					<Route path='/categories/:category' element={<ProductsPage />} />
+					<Route path='about' element={<AboutPage />} />
+					<Route path='categories' element={<CategoriesPage />} />
+					<Route path='categories/:category' element={<ProductsPage />} />
+					<Route path='product/:id' element={<ProductDescrPage />} />
 				</Route>
 			</Routes>
 		</div>
