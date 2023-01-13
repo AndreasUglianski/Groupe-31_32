@@ -1,0 +1,23 @@
+.category_card {
+	border: 2px solid black;
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	cursor: pointer;
+	/* text-transform: capitalize; */
+	text-decoration: none;
+	color: black;
+}
+
+.category_card:hover {
+	background-color: #4c4e52;
+	color: white;
+}
+
+.category_card img {
+	width: 150px;
+	height: 150px;
+	object-fit: contain;
+}
