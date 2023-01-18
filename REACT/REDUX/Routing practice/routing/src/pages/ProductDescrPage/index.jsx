@@ -12,20 +12,17 @@ export default function ProductDescrPage() {
 		getProduct(setProduct, id);
 	}, []);
 
-	// console.log(product);
-
-	const { title, description, price, images } = product;
-
-	console.log(images);
+	const { images, title, price, description } = product;
 
 	return (
 		<div className={s.product_descr}>
 			{images && <img src={images[0]} alt={title} />}
-			<div className={s.info_block}>
-				<p className={s.title}>{title}</p>
-				<p className={s.descr}>{description}</p>
+			<div className={s.info_bock}>
+				<p className={s.title}>Title: {title}</p>
+				<p className={s.descr}>Description: {description}</p>
 				<p className={s.price}>
-					<span>Price:</span> {price}$
+					<span>Price: $</span>
+					{price}
 				</p>
 			</div>
 		</div>

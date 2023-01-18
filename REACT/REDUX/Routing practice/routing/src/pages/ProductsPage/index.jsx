@@ -16,7 +16,7 @@ export default function ProductsPage() {
 	return (
 		<div className={s.products}>
 			{products.map((el) => (
-				<ProductCard key={el.id} {...el} />
+				<ProductCard key={el.id} product={el} {...el} />
 			))}
 		</div>
 	);
