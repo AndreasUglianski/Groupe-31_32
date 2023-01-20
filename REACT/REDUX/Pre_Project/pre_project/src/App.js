@@ -4,6 +4,7 @@ import Layout from './components/Layout';
 import CategoriesPage from './pages/CategoriesPage';
 import CartPage from './pages/CartPage';
 import ProductsPage from './pages/ProductsPage';
+import ProductDescrPage from './pages/ProductDescrPage';
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 					<Route index element={<CategoriesPage />} />
 					<Route path='cart' element={<CartPage />} />
 					<Route path=':category' element={<ProductsPage />} />
+					<Route path='product/:id' element={<ProductDescrPage />} />
 				</Route>
 			</Routes>
 		</div>
