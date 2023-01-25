@@ -1,0 +1,12 @@
+.cart_card {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	border: 3px solid red;
+	margin: 10px 0;
+	align-items: center;
+}
+
+.cart_card button {
+	cursor: pointer;
+}
