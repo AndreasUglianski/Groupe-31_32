@@ -1,0 +1,53 @@
+.footer {
+	display: flex;
+	justify-content: space-around;
+	padding: 50px;
+	background-color: rgb(230, 230, 227);
+}
+.contacts > h3 {
+	font-weight: 700;
+	font-size: 40px;
+}
+
+.contacts > p {
+	font-weight: 600;
+	font-size: 70px;
+}
+.address > h3 {
+	font-weight: 700;
+	font-size: 40px;
+}
+.address > h4 {
+	margin-top: 15px;
+	font-weight: 600;
+	font-size: 40px;
+}
+.address > h5 {
+	font-weight: 600;
+	font-size: 24px;
+}
+.address > h6 {
+	margin-top: 15px;
+	font-weight: 500;
+	font-size: 18px;
+}
+/* ////////////////////social_networ_icons */
+
+.social_network_icons {
+	margin-top: 13px;
+	font-size: 28px;
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+.social_network_icons > a {
+	display: block;
+	gap: 5px;
+	text-decoration: none;
+	color: black;
+	transition: all 0.5s ease;
+}
+.social_network_icons > a:hover {
+	transform: scale(1.1);
+	color: #339933;
+}
