@@ -1,0 +1,24 @@
+.card {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card img {
+	width: 33px;
+	height: 50px;
+	object-fit: contain;
+}
+
+.triggers {
+	display: flex;
+	flex-direction: column;
+}
+
+.triggers button {
+	width: 23px;
+	height: 20px;
+	background-color: #d9d9d9;
+	border: 1px solid black;
+	cursor: pointer;
+}
