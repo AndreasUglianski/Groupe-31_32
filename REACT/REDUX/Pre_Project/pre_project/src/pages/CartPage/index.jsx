@@ -22,7 +22,10 @@ export default function CartPage() {
 						))}
 					</div>
 					<div className={s.total}>
-						<p>Total: </p>
+						<p>
+							Total:
+							{cart.reduce((prev, { price, count }) => prev + price * count, 0)}{' '}
+						</p>
 						<button onClick={clear_cart}>Clear cart</button>
 					</div>
 				</div>
