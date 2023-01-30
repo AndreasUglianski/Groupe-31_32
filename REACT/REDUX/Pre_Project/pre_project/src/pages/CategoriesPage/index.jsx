@@ -14,7 +14,7 @@ export default function CategoriesPage() {
 		dispatch(load_categories);
 	}, []);
 
-	
+	// back_test();
 
 	return (
 		<div className={s.categories_page}>

@@ -21,6 +21,7 @@ export default function ProductCard({ id, title, image, price }) {
 			<Link to={product_url}>
 				<p>{title}</p>
 			</Link>
+			<p>Price: {price}$</p>
 		</div>
 	);
 }
