@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './index.module.css';
-import {InstagramOutlined, WhatsAppOutlined} from '@ant-design/icons'
+import { InstagramOutlined, WhatsAppOutlined } from '@ant-design/icons';
 
 export default function Footer() {
 	return (
@@ -11,13 +11,12 @@ export default function Footer() {
 				<div className={s.social_network_icons}>
 					<a href='https://www.instagram.com/'>
 						<InstagramOutlined />
-						 Instagram
+						Instagram
 					</a>
 					<a href='https://web.whatsapp.com/'>
 						<WhatsAppOutlined />
 						WhatsApp
 					</a>
-					
 				</div>
 			</div>
 			<div className={s.address}>

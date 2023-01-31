@@ -1,0 +1,24 @@
+.categories_subheader {
+	display: flex;
+	align-items: center;
+	margin: 50px 0 50px 50px;
+	gap: 40px;
+}
+.categories_subheader>h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+.categories_subheader button {
+    border: 2px solid #8B8B8B;
+    width: 130px;
+    height: 35px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.cat_card {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+}
+

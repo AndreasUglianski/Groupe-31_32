@@ -5,7 +5,7 @@ import HomePage from './pages/HomePage';
 import CategoriesPage from './pages/CategoriesPage';
 import ProductDescrPage from './pages/ProductDescrPage';
 import CartPage from './pages/CartPage';
-import ProductsPage from './pages/ProductPage';
+import ProductPage from './pages/ProductPage';
 
 
 
@@ -16,7 +16,7 @@ function App() {
 				<Route path='/' element={<Layout />}>
 					<Route index element={<HomePage />} />
 					<Route path='categories' element={<CategoriesPage />} />
-					<Route path=':category' element={<ProductsPage />} />
+					<Route path=':category' element={<ProductPage />} />
 					<Route path='/product/:id' element={<ProductDescrPage />} />
 					<Route path='cart' element={<CartPage />} />
 				</Route>
