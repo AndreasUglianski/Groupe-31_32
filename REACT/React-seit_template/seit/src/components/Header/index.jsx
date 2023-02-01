@@ -6,16 +6,19 @@ import logo from './media/logo_pic.png';
 import { BsGlobe2 } from 'react-icons/bs';
 
 export default function Header() {
-	return (
+
+    const sales = 
+    `Sales:\n+1 (800) 315-5939`;
+    return (
+        
+        
 		<header className={s.main_header}>
 			<div>
 				<Nav />
 				<img src={logo} alt='logo' />
 				<div className={s.info_block}>
 					<p>
-						Sales:
-						<bp />
-						+1 (800) 315-5939
+						{sales}
 					</p>
 					<BsGlobe2 className={s.glob_icon} />
 					<p>Serch: </p>
