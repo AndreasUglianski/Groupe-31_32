@@ -1,0 +1,20 @@
+.main_header {
+    background-color: rgb(186, 183, 183)
+}
+
+.main_header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 39px;
+}
+.info_block {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    gap: 20px;
+    text-align: end;
+}
+.glob_icon {
+    color: white;
+}
