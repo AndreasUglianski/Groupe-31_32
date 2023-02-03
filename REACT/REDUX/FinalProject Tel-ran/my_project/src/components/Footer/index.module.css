@@ -12,13 +12,14 @@
 .contacts > p {
 	font-weight: 600;
 	font-size: 70px;
+	margin-top: 50px;
 }
 .address > h3 {
 	font-weight: 700;
 	font-size: 40px;
 }
 .address > h4 {
-	margin-top: 15px;
+	margin-top: 30px;
 	font-weight: 600;
 	font-size: 40px;
 }
@@ -34,7 +35,7 @@
 /* ////////////////////social_networks_icons */
 
 .social_network_icons {
-	margin-top: 13px;
+	margin-top: 25px;
 	font-size: 28px;
 	display: flex;
 	align-items: center;

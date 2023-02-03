@@ -7,7 +7,7 @@ export default function Footer() {
 		<footer className={['wrapper', s.footer].join(' ')}>
 			<div className={s.contacts}>
 				<h3>Contacts</h3>
-				<p>+49 0000000000</p>
+				<p>+49 99999999</p>
 				<div className={s.social_network_icons}>
 					<a href='https://www.instagram.com/'>
 						<InstagramOutlined />
@@ -21,7 +21,8 @@ export default function Footer() {
 			</div>
 			<div className={s.address}>
 				<h3>Address</h3>
-				<h4>Dream, Pushkin str., 1</h4>
+				<h4>Linkstraße 2, 8 OG, 10785,<br />
+					Berlin, Deutschland</h4>
 				<h6>operation mode:</h6>
 				<h5>round the clock</h5>
 			</div>
