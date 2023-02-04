@@ -2,7 +2,7 @@ import {React, useEffect} from 'react'
 import s from './index.module.css'
 import { useDispatch, useSelector } from 'react-redux';
 import PromoItem from '../PromoItem'
-import { randomPromotionProducts } from '../../store/reducers/random_promotion';
+import { random_promo_products } from '../../requests/random_promo_req';
 
 
 
@@ -12,12 +12,20 @@ export default function PromoContainer() {
 	const promotions = useSelector((state) => state.randomPromotions);
 
 	useEffect(() => {
-		dispatch(randomPromotionProducts);
+		dispatch(random_promo_products);
 	}, []);
 	
-	return <section>
-		{
-			promotions.map((el) => <PromoItem key={el.id} {...el} />)
-		}
-	</section>;
+	
+	return (
+		<section className={['wrapper', s.promotion_section].join(' ')}>
+			<div className={s.promo_subheader}>
+				<h2>Promotions</h2>
+			</div>
+			<div className={s.promo_card}>
+				{promotions.map((el) => (
+					<PromoItem key={el.id} {...el} />
+				))}
+			</div>
+		</section>
+	);
 }

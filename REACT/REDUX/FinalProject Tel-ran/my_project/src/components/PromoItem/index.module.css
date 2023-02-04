@@ -1,0 +1,48 @@
+.promo_item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.promo_item img {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+    border: 1px solid transparent;
+    border-radius: 9px;
+}
+.promo_item>.prices{
+    margin-top: 20px;
+}
+.prices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin: 25 0px;
+}
+.discount_price{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.price {
+    color:#8B8B8B;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+.discount {
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.promo_title {
+    width: 300px;
+    font-size: 16px;
+    font-weight: 500;
+    height: 100px;
+    margin-top: 10px;
+}

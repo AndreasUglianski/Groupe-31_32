@@ -38,7 +38,6 @@ export default function DiscountCoupon() {
 									value={value}
 									onChange={onChange}
 									defaultCountry='DE'
-									placeholder='+ 49'
 									id='phone-input'
 								/>
 							)}
