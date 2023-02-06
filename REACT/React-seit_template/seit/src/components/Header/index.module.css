@@ -6,7 +6,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 17px 39px;
+    padding: 17px 0;
+    max-width:  1204px;
+    margin: 0 auto;
 }
 .info_block {
     display: flex;

@@ -1,0 +1,58 @@
+.img_block {
+	position: relative;
+}
+
+.img_block > p {
+	position: absolute;
+	font-size: 22px;
+	font-weight: 400;
+	top: 15px;
+	left: 16px;
+}
+
+.img_block button {
+	position: absolute;
+	bottom: 15px;
+	left: 100px;
+	background-color: white;
+	border-color: transparent;
+	padding: 10px;
+	border-radius: 3px;
+	cursor: pointer;
+	opacity: 0;
+}
+
+.img_block:hover button {
+	opacity: 1;
+}
+
+.img_block button:hover {
+	background-color: #241c15;
+	color: white;
+}
+
+.descr_block {
+	padding: 20px 16px;
+}
+
+.descr_block button {
+	background-color: transparent;
+	border-color: transparent;
+	padding: 30px 0 0 24px;
+}
+
+.color_1 {
+	background-color: #d99536;
+}
+
+.color_2 {
+	background-color: #e7b75f;
+}
+
+.color_3 {
+	background-color: #fdf8ea;
+}
+
+.color_4 {
+	background-color: white;
+}
