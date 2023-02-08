@@ -1,0 +1,22 @@
+.plans_block {
+	background-color: #f6f6f4;
+	padding: 80px 0;
+}
+
+.plans_block > div {
+	max-width: 1150px;
+	margin: 0 auto;
+}
+
+.plans_block h2 {
+	font-size: 32px;
+	font-weight: 400;
+	margin-bottom: 45px;
+	text-align: center;
+}
+
+.cards_container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	margin-bottom: 15px;
+}

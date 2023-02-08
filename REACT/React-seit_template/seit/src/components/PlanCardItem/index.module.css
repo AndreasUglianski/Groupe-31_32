@@ -1,0 +1,14 @@
+.card_item {
+    font-size: 13px;
+    color: #241C15;
+    text-decoration: underline;
+    padding: 18px 0 17px 30px;
+    border-bottom: 1px solid #DBD9D2;
+}
+.item_false {
+    color: rgba(36, 28, 21, 0.3);
+    text-decoration: none;
+}
+.card_item:last-child {
+    border-bottom: none;
+}

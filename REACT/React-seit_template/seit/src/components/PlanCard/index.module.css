@@ -1,0 +1,29 @@
+.card {
+	border: 1px solid #bcbab8;
+	padding: 25px;
+}
+
+.card p:nth-child(1) {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.card p:nth-child(2) {
+	margin: 8px 0 11px 0;
+}
+
+.card p:nth-child(2),
+.card p:nth-child(3),
+.card p:nth-child(4) {
+	color: rgba(36, 28, 21, 0.65);
+	font-size: 13px;
+}
+.card p > span {
+	color: #241c15;
+	display: block;
+}
+
+.card span span {
+	font-size: 33px;
+	color: #241c15;
+}
