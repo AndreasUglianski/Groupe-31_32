@@ -14,20 +14,22 @@
 	font-size: 70px;
 	margin-top: 50px;
 }
-.address > h3 {
+.address p:nth-child(1) {
+	
 	font-weight: 700;
 	font-size: 40px;
 }
-.address > h4 {
-	margin-top: 30px;
+.address p:nth-child(2) {
+	margin-top: 40px;
 	font-weight: 600;
 	font-size: 40px;
 }
-.address > h5 {
+.address p:nth-child(3) {
+	margin-top: 25px;
 	font-weight: 600;
 	font-size: 24px;
 }
-.address > h6 {
+.address p:nth-child(4) {
 	margin-top: 15px;
 	font-weight: 500;
 	font-size: 18px;

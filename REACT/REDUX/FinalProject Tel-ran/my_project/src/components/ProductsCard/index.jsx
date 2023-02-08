@@ -1,9 +1,18 @@
 import React from 'react';
 import s from './index.module.css';
+import { Link } from 'react-router-dom';
 
-export default function PromoItem({ image, title, price, discont_price }) {
+export default function ProductsCard({
+	id,
+	title,
+	image,
+	price,
+	discont_price,
+}) {
+	const product_url = `/product/${id}`;
+
 	return (
-		<div className={s.promo_item}>
+		<div className={s.products_card}>
 			<img src={`http://127.0.0.1.:3333${image}`} alt={title} />
 
 			<div className={s.prices}>
@@ -14,8 +23,10 @@ export default function PromoItem({ image, title, price, discont_price }) {
 				</p>
 			</div>
 
-			<div className={s.promo_title}>
-				<p>{title}</p>
+			<div className={s.proucts_title}>
+				<Link to={product_url}>
+					<p>{title}</p>
+				</Link>
 			</div>
 		</div>
 	);

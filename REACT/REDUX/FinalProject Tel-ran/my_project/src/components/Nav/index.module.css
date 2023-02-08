@@ -23,6 +23,7 @@
 	background-color: #339933;
 	border: 2px solid #339933;
 	border-radius: 5px;
+	cursor: pointer;
 }
 .nav_menu {
 	display: grid;

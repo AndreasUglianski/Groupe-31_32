@@ -1,0 +1,11 @@
+.products_category {
+    display: flex;
+	align-items: center;
+	gap: 34px;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 34px;
+    margin-top: 100px;
+}

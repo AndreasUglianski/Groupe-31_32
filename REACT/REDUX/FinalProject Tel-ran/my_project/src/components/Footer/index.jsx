@@ -20,11 +20,11 @@ export default function Footer() {
 				</div>
 			</div>
 			<div className={s.address}>
-				<h3>Address</h3>
-				<h4>Linkstraße 2, 8 OG, 10785,<br />
-					Berlin, Deutschland</h4>
-				<h6>operation mode:</h6>
-				<h5>round the clock</h5>
+				<p>Address</p>
+				<p>Linkstraße 2, 8 OG, 10785,<br />
+					Berlin, Deutschland</p>
+				<p>operation mode:</p>
+				<p>round the clock</p>
 			</div>
 		</footer>
 	);

@@ -22,7 +22,7 @@ export default function CategoriesPage() {
 				</Link>
 			</div>
 			<div className={s.cat_card}>
-				{categories.slice(0, -1).map((el, index) => (
+				{categories.slice(0, 4).map((el, index) => (
 					<CategorySectionCard key={index} {...el} />
 				))}
 			</div>

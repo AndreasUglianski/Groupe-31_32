@@ -13,7 +13,7 @@ export default function PromoContainer() {
 
 	useEffect(() => {
 		dispatch(random_promo_products);
-	}, []);
+	}, [dispatch]);
 	
 	
 	return (

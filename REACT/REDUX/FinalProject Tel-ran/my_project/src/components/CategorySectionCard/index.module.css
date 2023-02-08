@@ -1,17 +1,18 @@
 .cat_picture {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
 }
 
 .cat_picture img {
-    width: 320px;
-    height: 350px;
-    object-fit: cover;
+	width: 320px;
+	height: 350px;
+	object-fit: cover;
 }
 .cat_picture p {
-    font-size: 18px;
-    font-weight: 600;
-    margin-top: 15px;
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 15px;
 }

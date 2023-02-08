@@ -20,7 +20,8 @@
     justify-content: space-between;
     align-items: center;
     width: 300px;
-    margin: 25 0px;
+    margin-top: 25px;
+    padding: 0 15px;
 }
 .discount_price{
     font-size: 30px;
@@ -31,6 +32,7 @@
     color:#8B8B8B;
     font-size: 20px;
     font-weight: 500;
+    text-decoration: line-through;
     
 }
 .discount {

@@ -1,18 +1,18 @@
-
-
-.all_categ_pict {
+.category_card {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	text-decoration: none;
+	color: #3A3A3A;
 }
-.all_categ_pict img {
+.category_card img {
 	width: 317px;
 	height: 345px;
 	object-fit: cover;
     
 }
-.all_categ_pict p {
+.category_card p {
 	font-size: 18px;
 	font-weight: 600;
 	margin-top: 15px;
