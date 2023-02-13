@@ -4,8 +4,8 @@ import { InstagramOutlined, WhatsAppOutlined } from '@ant-design/icons';
 
 export default function Footer() {
 	return (
-		<footer className={['wrapper', s.footer].join(' ')}>
-			<div className={s.contacts}>
+		<footer className={['wrapper', s.footer].join(' ')} >
+			<div id='contacts' className={s.contacts}>
 				<h3>Contacts</h3>
 				<p>+49 999 999 99</p>
 				<div className={s.social_network_icons}>

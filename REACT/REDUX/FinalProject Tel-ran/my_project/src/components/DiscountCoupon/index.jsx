@@ -17,7 +17,7 @@ export default function DiscountCoupon() {
 
 	return (
 		<section className={['wrapper', s.container].join(' ')}>
-			<div className={s.image}>
+			<div id='coupon' className={s.image}>
 				<img src={image} alt='gnome' />
 			</div>
 			<div className={s.info_block}>

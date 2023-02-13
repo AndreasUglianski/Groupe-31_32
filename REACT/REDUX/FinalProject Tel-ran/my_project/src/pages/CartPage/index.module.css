@@ -1,0 +1,40 @@
+.subheader_cart h2 {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 130%;
+	margin: 79px 0 30px 20px;
+}
+
+.general_block {
+	display: flex;
+}
+.return_block {
+	display: flex;
+	align-items: center;
+}
+.home {
+	display: flex;
+    margin: 0 100px 35px 20px;
+    
+    }
+.home p {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 130%;
+}
+.back_shoping {
+	display: flex;
+    margin: 0 0 35px 400px;
+}
+.back_shoping p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    
+}
+.info_block {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './index.module.css';
 import image from './media/flowers.png';
+import {Link} from 'react-scroll'
 
 export default function Sales() {
 	return (
@@ -9,7 +10,9 @@ export default function Sales() {
 				<p>New season</p>
 				<h2>Sale</h2>
 				<div className={s.buttons}>
-					<button className={s.promo_btn}>All promotions</button>
+					<Link to='promo' smooth={true} duration={1000}>
+						<button className={s.promo_btn}>All promotions</button>
+					</Link>
 					<button className={s.learn_more_btn}>Learn more</button>
 				</div>
 			</div>

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link as RouterLink } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll/modules';
 import logo from './media/logo.png';
 import s from './index.module.css';
 import { SlHandbag } from 'react-icons/sl';
@@ -9,20 +10,28 @@ export default function Nav({ menuActive, setMenuActive }) {
 	return (
 		<nav className={['wrapper', s.nav_block].join(' ')}>
 			<div className={s.logo}>
-				<Link to='/'>
+				<RouterLink to='/'>
 					<img src={logo} alt='logo' />
-				</Link>
-				<button className={s.catalog}>Catalog</button>
+				</RouterLink>
+				<ScrollLink to='catalog' smooth={true} duration={1000}>
+					<button className={s.catalog}>Catalog</button>
+				</ScrollLink>
 			</div>
 
 			<ul className={[s.nav_menu, menuActive ? s.active : ''].join(' ')}>
-				<Link to='/categories'>Categories</Link>
-				<Link to='coupon'>Coupon</Link>
-				<Link to='promotions'>Promotions</Link>
-				<Link to='contacts'>Contacts</Link>
-				<Link to=''>
+				<RouterLink to='/categories'>Categories</RouterLink>
+				<ScrollLink to='coupon' smooth={true} duration={1000}>
+					Coupon
+				</ScrollLink>
+				<ScrollLink to='promo' smooth={true} duration={1000}>
+					Promotions
+				</ScrollLink>
+				<ScrollLink to='contacts' smooth={true} duration={1000}>
+					Contacts
+				</ScrollLink>
+				<RouterLink to='/cart'>
 					<SlHandbag />
-				</Link>
+				</RouterLink>
 			</ul>
 			<MenuOutlined
 				className={s.menu_icon}

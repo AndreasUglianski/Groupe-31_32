@@ -18,7 +18,7 @@ export default function PromoContainer() {
 	
 	return (
 		<section className={['wrapper', s.promotion_section].join(' ')}>
-			<div className={s.promo_subheader}>
+			<div id='promo' className={s.promo_subheader}>
 				<h2>Promotions</h2>
 			</div>
 			<div className={s.promo_card}>

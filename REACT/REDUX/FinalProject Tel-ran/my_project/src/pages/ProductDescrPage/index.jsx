@@ -1,42 +1,50 @@
-import React from 'react'
-import s from './index.module.css'
-import { useParams} from 'react-router-dom';
+import React from 'react';
+import s from './index.module.css';
+import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { load_product } from '../../requests/product_item_req';
 import { addToCart } from '../../store/reducers/cart';
 
-
 export default function ProductDescrPage() {
+	const dispatch = useDispatch();
+	const product = useSelector((state) => state.product_item);
+	const { id } = useParams();
 
-const dispatch = useDispatch();
-  const product = useSelector((state) => state.product_item);
-  const { id } = useParams();
+	
 
-  const add_to_cart = () =>
+	const add_to_cart = () =>
 		dispatch(addToCart({ id: +id, title, image, price }));
 
-  useEffect(() => {
+	useEffect(() => {
 		dispatch(load_product(id));
 	}, []);
 
-const { title, description, price, image } = product;
+	const { title, description, price, image, discont_price } = product;
 
-  return (
-   
-		<div className={s.product_descr}>
-			{image && <img src={image} alt={title} />}
-			<div className={s.info_block}>
-				<p className={s.title}>{title}</p>
-				<p className={s.descr}>{description}</p>
-				<div className={s.price_block}>
-					<p className={s.price}>
-						<span>Price:</span> {price}$
-					</p>
-					<button onClick={add_to_cart}>Add to cart</button>
+	// console.log(product);
+
+	return (
+		<section className={['wrapper', s.product_descr].join(' ')}>
+			<div>
+				<h2 className={s.title}>{title}</h2>
+				<div className={s.img_wrapper}>
+					{image && <img src={`http://127.0.0.1.:3333${image}`} alt={title} />}
 				</div>
 			</div>
-		</div>
+
+			<div className={s.info_block}>
+				<div className={s.price_block}>
+					<p className={s.discount_price}>{discont_price}$</p>
+					<p className={s.price}>{price}$</p>
+					<p className={s.discount}>
+						-{Math.round(((price - discont_price) * 100) / price)}%
+					</p>
+				</div>
+				<button onClick={add_to_cart}>Add to cart</button>
+				<p className={s.subheader_descr}>Description:</p>
+				<p className={s.text}>{description}</p>
+			</div>
+		</section>
 	);
 }
-

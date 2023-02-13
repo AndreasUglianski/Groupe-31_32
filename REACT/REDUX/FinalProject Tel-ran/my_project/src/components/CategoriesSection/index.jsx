@@ -15,8 +15,8 @@ export default function CategoriesPage() {
 
 	return (
 		<section className={['wrapper', s.categories_section].join(' ')}>
-			<div className={s.categories_subheader}>
-				<h2>Categories</h2>
+			<div id='catalog' className={s.categories_subheader}>
+				<h2>Catalog</h2>
 				<Link to='/categories'>
 					<button>all categories</button>
 				</Link>
@@ -26,6 +26,8 @@ export default function CategoriesPage() {
 					<CategorySectionCard key={index} {...el} />
 				))}
 			</div>
+
+			
 		</section>
 	);
 }
