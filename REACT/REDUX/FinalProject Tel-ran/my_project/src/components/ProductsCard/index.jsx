@@ -14,7 +14,7 @@ export default function ProductsCard({
 	const product_url = `/products/${id}`;
 
 	const dispatch = useDispatch();
-	const add_to_cart = () => dispatch(addToCart({ id, title, image, price }));
+	const add_to_cart = () => dispatch(addToCart({ id, title, image, price, discont_price }));
 	return (
 		<div className={s.products_card}>
 			<div className={s.cards_btn}>

@@ -1,0 +1,30 @@
+.cart_form {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+.cart_form input {
+	width: 446px;
+	height: 73px;
+    padding-left: 25px;
+	border-radius: 25px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 130%;
+	background: #ffffff;
+	border: 1px solid #000000;
+	border-radius: 20px;
+}
+.cart_form > button {
+	width: 446px;
+	height: 76px;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 130%;
+	background: #339933;
+	border-radius: 17px;
+	color: #ffffff;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}

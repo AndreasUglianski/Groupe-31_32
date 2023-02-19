@@ -4,6 +4,7 @@ import { Link as ScrollLink } from 'react-scroll/modules';
 import logo from './media/logo.png';
 import s from './index.module.css';
 import { SlHandbag } from 'react-icons/sl';
+import {GrCart} from 'react-icons/gr'
 import { MenuOutlined } from '@ant-design/icons';
 
 export default function Nav({ menuActive, setMenuActive }) {
@@ -29,8 +30,8 @@ export default function Nav({ menuActive, setMenuActive }) {
 				<ScrollLink to='contacts' smooth={true} duration={1000}>
 					Contacts
 				</ScrollLink>
-				<RouterLink to='/cart'>
-					<SlHandbag />
+				<RouterLink to='/cart' className={s.cart}>
+					<GrCart />
 				</RouterLink>
 			</ul>
 			<MenuOutlined

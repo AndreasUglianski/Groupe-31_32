@@ -14,7 +14,7 @@ export default function ProductDescrPage() {
 	
 
 	const add_to_cart = () =>
-		dispatch(addToCart({ id: +id, title, image, price }));
+		dispatch(addToCart({ id: +id, title, image, price, discont_price }));
 
 	useEffect(() => {
 		dispatch(load_product(id));

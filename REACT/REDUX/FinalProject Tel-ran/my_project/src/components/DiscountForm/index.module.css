@@ -1,0 +1,29 @@
+.coupon_form {
+	display: flex;
+	flex-direction: column;
+}
+.coupon_form input{
+	height: 75px;
+	width: 473px;
+	border: 3px solid #FFFFFF;
+	border-radius:25px;
+	font-size: 18px;
+	padding-left: 35px;
+    margin-left: 100px;
+	margin-top: 46px;
+}
+.coupon_form>button{
+	height: 75px;
+	width: 473px;
+	border-radius:25px;
+	margin-left: 100px;
+	margin-top: 25px;
+	
+	color:#FFFFFF;
+	background-color: transparent;
+	border: 3px solid #FFFFFF;
+	font-weight: 700;
+    font-size: 29px;
+    line-height: 120%;
+	cursor: pointer;
+}

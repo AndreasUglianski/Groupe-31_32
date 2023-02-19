@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 
 export default function PromoItem({ image, title, price, discont_price,id }) {
 
-const product_url = `/categories/${id}`;
+	const product_url = `/categories/${id}`;
+	
+	
 
 	return (
 		<div className={s.promo_item}>
