@@ -20,9 +20,9 @@ export default function ProductsPage() {
 	useEffect(() => {
 		dispatch(all_Products(id))
 		
-	}, []);
+	}, [dispatch, id]);
 
-	// console.log(products);
+	console.log(products);
 
 	return (
 		<section className={['wrapper', s.products_category].join(' ')}>
@@ -63,7 +63,7 @@ export default function ProductsPage() {
 			</div>
 
 			<div className={s.products}>
-				{products.map((el) => (
+				{products.length && products.map((el) => (
 					<ProductsCard key={el.id} {...el} />
 				))}
 			</div>

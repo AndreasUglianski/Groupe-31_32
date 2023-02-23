@@ -37,7 +37,8 @@
 	text-decoration: none;
 }
 .cart {
-	font-size:25px
+	font-size:20px;
+	color: rgb(255, 68, 68);
 }
 .menu_icon {
 	display: none;

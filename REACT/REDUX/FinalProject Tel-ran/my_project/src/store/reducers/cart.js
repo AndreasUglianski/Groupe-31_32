@@ -2,23 +2,15 @@
 const defaultState = [];
 
 const ADD_TO_CART = 'ADD_TO_CART';
-
 const CLEAR_CART = 'CLEAR_CART';
-
 const DELETE_PRODUCT = 'DELETE_PRODUCT';
-
 const INCREMENT_COUNT = 'INCREMENT_COUNT';
-
 const DECREMENT_COUNT = 'DECREMENT_COUNT';
 
 export const addToCart = (payload) => ({ type: ADD_TO_CART, payload });
-
 export const clearCart = () => ({ type: CLEAR_CART });
-
 export const deleteProduct = (payload) => ({ type: DELETE_PRODUCT, payload });
-
 export const incrementCount = (payload) => ({ type: INCREMENT_COUNT, payload });
-
 export const decrementCount = (payload) => ({ type: DECREMENT_COUNT, payload });
 
 const checkProduct = (state, payload) => {

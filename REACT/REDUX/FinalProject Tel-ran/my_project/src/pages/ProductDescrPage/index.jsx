@@ -18,7 +18,7 @@ export default function ProductDescrPage() {
 
 	useEffect(() => {
 		dispatch(load_product(id));
-	}, []);
+	}, [dispatch, id]);
 
 	const { title, description, price, image, discont_price } = product;
 

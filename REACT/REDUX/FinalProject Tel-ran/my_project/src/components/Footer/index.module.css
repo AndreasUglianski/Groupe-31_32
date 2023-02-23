@@ -2,7 +2,7 @@
 	display: flex;
 	justify-content: space-around;
 	padding: 50px;
-	background-color: rgb(230, 230, 227);
+	background-color: rgba(255, 255, 255, 0.749);
 }
 .contacts > h3 {
 	font-weight: 700;
@@ -23,6 +23,7 @@
 	margin-top: 40px;
 	font-weight: 600;
 	font-size: 40px;
+	text-decoration-line: underline;
 }
 .address p:nth-child(3) {
 	margin-top: 25px;
