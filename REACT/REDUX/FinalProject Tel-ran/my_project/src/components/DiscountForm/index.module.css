@@ -12,6 +12,13 @@
     margin-left: 100px;
 	margin-top: 46px;
 }
+.coupon_form p{
+    color: #f46106;
+    font-size: 17px;
+    margin-left: 100px;
+    margin-top: 10px;
+    background-color: #FFFFFF
+}
 .coupon_form>button{
 	height: 75px;
 	width: 473px;
