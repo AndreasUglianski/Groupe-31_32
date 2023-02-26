@@ -8,7 +8,7 @@ import CartPage from './pages/CartPage';
 import ProductsPage from './pages/ProductsPage';
 import PromoContainer from './components/PromoContainer';
 import DiscountCoupon from './components/DiscountCoupon';
-import Footer from './components/Footer';
+
 
 
 
