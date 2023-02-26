@@ -5,8 +5,9 @@ export const all_Products = (id) => {
 		fetch(`http://localhost:3333/categories/${id}`)
 			.then((resp) => resp.json())
 			.then((json) => {
-				dispatch(allProducts(json));
-			}); //allProducts
+				const payload = json.map(el => ({...el, hide: false}))
+				dispatch(allProducts(payload));
+			}); 
 	}
 	};
 

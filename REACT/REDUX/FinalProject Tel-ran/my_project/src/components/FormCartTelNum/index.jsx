@@ -8,7 +8,7 @@ export default function FormCartTelNum() {
 		handleSubmit,
 		formState: { errors },
 		reset,
-	} = useForm();
+	} = useForm({ mode: 'onChange'});
 
 	const submit = (data) => {
 		console.log(data);
@@ -16,10 +16,10 @@ export default function FormCartTelNum() {
 	};
 
 	const phoneRegister = register('phone', {
-		required: '***The field "phone number" is requared***',
+		required: '*The field "phone number" is requared!',
 		pattern: {
-			value: /^(\+49|0049|0)[1-9]\d{1,14}$/,
-			message: 'Must be in the format: +49 123456789***',
+			value: /^\+(?:[0-9] ?){6,14}[0-9]$/,
+			message: 'Must be in the format: +49 123456789**',
 		},
 	});
 
@@ -31,11 +31,10 @@ export default function FormCartTelNum() {
 				// defaultValue={'+49 '}
 				title='phone'
 				placeholder='Enter your phone number'
-				maxLength={14}
 				{...phoneRegister}
 			/>
 			{errors?.phone && <p>{errors?.phone?.message}</p>}
-			<button>Ordder</button>
+			<button>Order</button>
 		</form>
 	);
 }

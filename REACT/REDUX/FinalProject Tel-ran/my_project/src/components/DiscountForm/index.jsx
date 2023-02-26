@@ -8,20 +8,21 @@ export default function DiscountForm() {
 		handleSubmit,
 		formState: { errors },
 		reset,
-	} = useForm();
+	} = useForm({ mode: 'onChange' });
 
 	const submit = (data) => {
 		console.log(data);
 		reset();
 	};
 
-    const phoneRegister = register('phone', {
-        required: '***The field "phone number" is requared***',
-        pattern: {
-            value: /^(\+49|0049|0)[1-9]\d{1,14}$/,
-            message: 'The phone number must be in the format: +49 123456789***'
-        }
-    });
+	const phoneRegister = register('phone', {
+		required: '*The field "phone number" is requared!',
+		pattern: {
+			value: /^\+(?:[0-9] ?){6,14}[0-9]$/,
+			message: 'Must be in the format: +49 123456789**',
+		},
+	});
+
 
 	return (
 		<form onSubmit={handleSubmit(submit)} className={s.coupon_form}>
@@ -31,7 +32,6 @@ export default function DiscountForm() {
 				// defaultValue={'+49 '}
 				title='phone'
 				placeholder='Enter your phone number'
-				maxLength={14}
 				{...phoneRegister}
 			/>
 			{errors?.phone && <p>{errors?.phone?.message}</p>}
